@@ -10,4 +10,29 @@
 
 @interface Box : NSObject
 
+@property (assign, nonatomic) float height;
+@property (assign) float  width;
+@property (assign) float  length;
+
+- (instancetype) initWithHeight:(float)height
+                        width:(float)width
+                         length:(float)length;
+
+-(float) volume;
+
+-(BOOL)canFit:(Box * )box;
+
+
 @end
+
+//@interface Person : NSObject
+//
+//@property (readonly) NSString *firstname;
+//@property (readonly) NSString *lastname;
+//@property NSNumber * year;
+//@property int dateOfYear;
+//
+//
+//@end
+
+
